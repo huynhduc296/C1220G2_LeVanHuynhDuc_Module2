@@ -14,5 +14,4 @@ public class Ex14_1 {
         System.out.println("Perimeter of the Rectangle: "+ rectangle.getPerimeter());
         System.out.println("Area of the Rectangle: "+ rectangle.getArea());
     }
-
 }
