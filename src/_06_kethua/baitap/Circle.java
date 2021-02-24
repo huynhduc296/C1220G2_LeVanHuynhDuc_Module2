@@ -1,7 +1,5 @@
 package _06_kethua.baitap;
 
-import javax.print.DocFlavor;
-
 public class Circle {
     private double radius=1;
     private String color="black";
@@ -9,11 +7,14 @@ public class Circle {
     public Circle() {
     }
 
+    public Circle(double radius, String color, boolean filled) {
+    }
+
     public double getRadius() {
         return radius;
     }
 
-    public Circle(double radius, String color) {
+    public Circle(double radius) {
         this.radius = radius;
         this.color = color;
     }
