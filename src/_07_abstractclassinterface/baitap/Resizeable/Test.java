@@ -8,6 +8,7 @@ public class Test {
         Circle circle=new Circle();
         circle.resize(Math.random());
         Square square=new Square();
-        square.resize(Math.random());
+        square.resize(Math.random()*100);
+
     }
 }
