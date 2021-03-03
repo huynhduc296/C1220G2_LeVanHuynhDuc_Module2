@@ -42,9 +42,10 @@ public class MyList<E> {
     }
 
     private void checkIndex(int index) {
-        if (index < 0 || index >= size)
+        if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException
                     ("index " + index + " out of bounds");
+        }
     }
 
     public E remove(int index){
