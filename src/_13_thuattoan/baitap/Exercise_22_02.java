@@ -24,8 +24,8 @@ public class Exercise_22_02 {
             }
             list.clear();
         }
-        for (Character ch: max) { // single loop
-            System.out.print(ch); // Simple statement
+        for (Character ch: max) {
+            System.out.print(ch);
         }
         System.out.println();
         }

@@ -12,6 +12,7 @@ public class Main {
         list.add(new Product(3,"name3",30));
         list.add(new Product(4,"name4",40));
         boolean check=true;
+
 while (check) {
     System.out.println("Menu :\n" +
             "1.Thêm sản phẩm \n" +
@@ -24,29 +25,36 @@ while (check) {
     );
     Scanner scanner = new Scanner(System.in);
     System.out.println("Nhập lựa chọn nếu bạn muốn");
-    int choice = scanner.nextInt();
+    String choice1 = scanner.nextLine();
+    char choice;
+    if(choice1.length() == 1){
+         choice=choice1.charAt(0);
+    }else {
+        choice='a';
+    }
+
     switch (choice) {
-        case 1:
+        case '1':
             ProductManage.add(list);
             break;
-        case 2:
+        case '2':
             ProductManage.display(list);
             break;
-        case 3:
+        case '3':
             ProductManage.delete(list);
             ProductManage.display(list);
             break;
-        case 4:
+        case '4':
             ProductManage.edit(list);
             break;
-        case 5:
+        case '5':
             ProductManage.search(list);
             break;
-        case 6:
+        case '6':
             ProductManage.sort(list);
             ProductManage.display(list);
             break;
-        case 7:
+        case '7':
             check=false;
             break;
         default:
