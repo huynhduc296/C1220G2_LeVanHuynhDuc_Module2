@@ -1,6 +1,6 @@
 package models;
 
-public class Villa extends Services  {
+public class Villa extends Services implements Comparable<Villa> {
     private String standardRoom;
     private String otherAmenities;
     private int acreagePool;
@@ -65,5 +65,10 @@ public class Villa extends Services  {
                 "Tiện nghi khác :"+this.getOtherAmenities()+
                 "Diện tích hồ bơi :"+this.getAcreagePool()+
                 "Số tầng :"+this.getFloors();
+    }
+
+    @Override
+    public int compareTo(Villa o) {
+        return getServiceName().compareTo(o.getServiceName());
     }
 }
